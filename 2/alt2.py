@@ -11,7 +11,6 @@ print("initial general hypothesis is: ", ghypo)
 
 for x in range(1, rows):
     lst = dataarr[x]
-
     if lst[cols-1] == "1":
         for i in range(0, cols-1):
             if shypo[i] == lst[i]:
@@ -20,7 +19,6 @@ for x in range(1, rows):
             for g in ghypo:
                 if g[i] != '?' and shypo[i] == '?':
                     ghypo.remove(g)
-
     elif lst[cols-1] == "0":
         for i in range(0, cols-1):
             if lst[i] != shypo[i] and shypo[i] != '?':
